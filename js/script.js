@@ -1,9 +1,8 @@
-new WOW().init();
 
 $('.customer-review').slick({
     slidesToShow: 2,
     slidesToScroll: 1,
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 1500,
     arrows:false,
     dots:true,

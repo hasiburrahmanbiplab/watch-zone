@@ -2,12 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Fossil</title>
     <!-- bootstrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- ~animate css -->
-    <link rel="stylesheet" href="css/animate.css">
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,7 +35,7 @@
       </button>
       <div class="offcanvas offcanvas-fix   offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
         <div class="offcanvas-header">
-          <a class="fw-semibold fs-1 text-uppercase text-success" href="#">
+          <a class="fw-semibold fs-1 text-uppercase text-black" href="#">
             FossiL.
           </a>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -70,9 +68,9 @@
           </nav>
         </div>
       </div>
-    <nav class="navbar main-navbar d-none d-lg-block navbar-expand-lg bg-body-tertiary wow rotateInUpLeft data-wow-duration=1s">
+    <nav class="navbar main-navbar d-none d-lg-block navbar-expand-lg bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand fs-1 text-uppercase text-success" href="#">
+          <a class="navbar-brand fs-1 text-uppercase text-white" href="#">
             Fossil.
           </a>
           <button class="navbar-toggler  p-0 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -81,25 +79,25 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2">
               <li class="nav-item">
-                <a class="nav-link text-capitalize fw-medium fs-6 active " aria-current="page" href="#">Home</a>
+                <a class="nav-link text-white text-capitalize fw-medium fs-6 active " aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-capitalize fw-medium fs-6" href="#">Overview</a>
+                <a class="nav-link text-white text-capitalize fw-medium fs-6" href="#">Overview</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-capitalize fw-medium fs-6" href="#">video</a>
+                <a class="nav-link text-white text-capitalize fw-medium fs-6" href="#">video</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-capitalize fw-medium fs-6" href="#">Reviews</a>
+                <a class="nav-link text-white text-capitalize fw-medium fs-6" href="#">Reviews</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-capitalize fw-medium fs-6" href="#">Features</a>
+                <a class="nav-link text-white text-capitalize fw-medium fs-6" href="#">Features</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-capitalize fw-medium fs-6" href="#">Faqs</a>
+                <a class="nav-link text-white text-capitalize fw-medium fs-6" href="#">Faqs</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-capitalize fw-medium fs-6" href="#">Order</a>
+                <a class="nav-link text-white text-capitalize fw-medium fs-6" href="#">Order</a>
               </li>
             </ul>
           </div>
@@ -107,15 +105,15 @@
       </nav>
     <!-- navbar part End -->
     <!-- banner part start -->
-    <section id="banner" class="wow rotateInDownRight">
-     <div class="container">
-      <div class="row ">
-        <div class="col-12 col-md-7 col-lg-6 py-xxl-5">
-          <div class="banner-text">
-            <h1 class="text-capitalize lh-1 mb-0 text-black">Perfect <span class="text-success">Watch</span> for perfect people.</h1>
+    <section id="banner">
+     <div class="container h-100">
+      <div class="row h-100">
+        <div class="col-12 col-md-7 col-lg-5 py-xxl-5 h-100">
+          <div class="banner-text d-flex justify-content-center flex-column h-100">
+            <h1 class="lh-1 mb-0 text-black">Perfect <span class="">Watch</span> for perfect people.</h1>
             <p class="text-capitalize lh-3 py-3 fw-light fs-6 text-light-emphasis">Discover captivating stories, expand your knowledge, and embark on new adventures.</p>
-            <div class="btn p-0">
-                <a class="d-flex justify-content-center align-items-center text-white text-uppercase bg-success  fw-medium px-3 py-2 fs-5" href="#">order now</a>
+            <div class="common-btn bg-success d-flex justify-content-center align-items-center rounded-3">
+                <a class="text-white text-capitalize fw-medium fs-6" href="#">order now</a>
             </div>
           </div>
         </div>
@@ -128,18 +126,20 @@
     <section id="product">
       <div class="container">
         <div class="row py-5">
-          <div class="col-md-6 d-flex align-items-center wow slideInLeft">
+          <div class="col-md-6 d-flex align-items-center">
             <div class="product-1">
-              <h2 class="fs-1 text-capitalize text-success fw-light">Product overview</h2>
-              <p class="text-capitalize fw-light fs-6 py-2 text-light-emphasis">Welcome to the elegant world of Reddy. Our watches blend exquisite craftsmanship with timeless design, making them the perfect accessory for any occasion. Each timepiece is meticulously handcrafted to ensure superior quality and precision. Explore our collection and discover the artistry that defines us.</p>
+              <div class="common-heading">
+                <h2 class="text-capitalize text-black fw-light">Product overview</h2>
+                <p class="text-capitalize fw-light fs-6 py-2 text-light-emphasis">Welcome to the elegant world of Reddy. Our watches blend exquisite craftsmanship with timeless design, making them the perfect accessory for any occasion. Each timepiece is meticulously handcrafted to ensure superior quality and precision. Explore our collection and discover the artistry that defines us.</p>
+              </div>
             </div>
           </div>
-          <div class="col-md-6 wow slideInRight">
+          <div class="col-md-6">
             <div class="product-2">
               <ul>
-                <li><span class="fw-bold text-success text-capitalize fs-6">Premium Materials:</span><p class="d-inline text-capitalize fs-6 fw-light text-light-emphasis"> Crafted with the finest materials, our watches feature high-quality stainless steel cases and scratch-resistant sapphire crystal, ensuring durability and longevity.</p></li>
-                <li class="pt-2"><span class="fw-bold text-success text-capitalize fs-6">precision Timekeeping:</span><p class="d-inline text-capitalize fs-6 fw-light text-light-emphasis"> Our watches are equipped with precise quartz movements or automatic movements, guaranteeing accurate timekeeping for the modern individual.</p></li>
-                <li class="pt-2"><span class="fw-bold text-success text-capitalize fs-6">Elegant design:</span><p class="d-inline text-capitalize fs-6 fw-light text-light-emphasis">The sleek and minimalist design of our watches exudes sophistication and class. From the slim profile to the carefully crafted dials, every detail is meticulously designed to make a statement.</p></li>
+                <li><span class="fw-bold text-black text-capitalize fs-6">Premium Materials:</span><p class="d-inline text-capitalize fs-6 fw-light text-light-emphasis"> Crafted with the finest materials, our watches feature high-quality stainless steel cases and scratch-resistant sapphire crystal, ensuring durability and longevity.</p></li>
+                <li class="pt-2"><span class="fw-bold text-black text-capitalize fs-6">precision Timekeeping:</span><p class="d-inline text-capitalize fs-6 fw-light text-light-emphasis"> Our watches are equipped with precise quartz movements or automatic movements, guaranteeing accurate timekeeping for the modern individual.</p></li>
+                <li class="pt-2"><span class="fw-bold text-black text-capitalize fs-6">Elegant design:</span><p class="d-inline text-capitalize fs-6 fw-light text-light-emphasis"> The sleek and minimalist design of our watches exudes sophistication and class. From the slim profile to the carefully crafted dials, every detail is meticulously designed to make a statement.</p></li>
               </ul> 
             </div>
           </div>
@@ -152,13 +152,15 @@
       <div class="container">
         <div class="row py-5">
           <div class="col-12">
-            <div class="video-header text-center wow flipInY" >
-              <h2 class="text-success fs-1 text-capitalize fw-light">Video Promo</h2>
-              <p class="text-white-50 fs-6 fw-light text-capitalize w-75 text-center d-inline-block py-2">Condimentum amet quam venenatis nulla sed sem lacus cursus sit. Sed nulla felis aliquet elementum egestas suspendisse nisl faucibus nulla. </p>
+            <div class="video-header text-center m-auto">
+              <div class="common-heading">
+                <h2 class="text-white text-white fw-light">Video Promo</h2>
+                <p class="text-white fs-6 fw-light text-capitalize  text-center d-inline-block pt-3 pb-2">Condimentum amet quam venenatis nulla sed sem lacus cursus sit. Sed nulla felis aliquet elementum egestas suspendisse nisl faucibus nulla. </p>
+              </div>
             </div>
           </div>
           <div class="col-12">
-            <div class="video-part wow fadeInUpBig data-wow-delay='15s'">
+            <div class="video-part">
               <video controls autoplay width="100%" height="100%"  poster="image/Video-banner.png" >
                 <source src="video/v.mp4" type="video/mp4">
               </video>
@@ -174,14 +176,16 @@
         <div class="row py-5">
            <div class="col-12">
             <div class="customer-header">
-              <h2 class="text-center wow bounceOut text-success text-capitalize fs-1">Our Customer Reviews</h2>
+              <div class="common-heading">
+                <h2 class="text-center text-black text-capitalize">Our Customer Reviews</h2>
+              </div>
             </div>
            </div>
            <div class="col-12">
-            <div class="customer-review wow fadeInLeftBig pt-4 pt-sm-5">
+            <div class="customer-review pt-4 pt-sm-5">
               <div class="inner-part">
                 <p class="text-light-emphasis fw-light text-capitalize fs-6 pb-2">"I've owned several luxury watches, but my Reddy watch stands out from the rest. The craftsmanship is impeccable, and the attention to detail is truly remarkable. It's a timeless piece that never fails to garner compliments. I'm proud to be a Reddy watch owner."</p>
-                <span class="text-success fw-semibold fs-6 text-uppercase">David T - Feb 22, 2023</span>
+                <span class="text-black fw-semibold fs-6 text-uppercase">David T - Feb 22, 2023</span>
                 <span class="text-warning"><i class="fa-solid fa-star"></i></span>
                 <span class="text-warning"><i class="fa-solid fa-star"></i></span>
                 <span class="text-warning"><i class="fa-solid fa-star"></i></span>
@@ -190,7 +194,7 @@
               </div>
               <div class="inner-part">
                 <p class="text-light-emphasis fw-light text-capitalize fs-6 pb-2">"I've owned several luxury watches, but my Reddy watch stands out from the rest. The craftsmanship is impeccable, and the attention to detail is truly remarkable. It's a timeless piece that never fails to garner compliments. I'm proud to be a Reddy watch owner."</p>
-                <span class="text-success fw-semibold text-uppercase">Emma T - Feb 22, 2023</span>
+                <span class="text-black fw-semibold text-uppercase">Emma T - Feb 22, 2023</span>
                 <span class="text-warning"><i class="fa-solid fa-star"></i></span>
                 <span class="text-warning"><i class="fa-solid fa-star"></i></span>
                 <span class="text-warning"><i class="fa-solid fa-star"></i></span>
@@ -199,7 +203,7 @@
               </div>
               <div class="inner-part">
                 <p class="text-light-emphasis fw-light text-capitalize fs-6 pb-2">"I've owned several luxury watches, but my Reddy watch stands out from the rest. The craftsmanship is impeccable, and the attention to detail is truly remarkable. It's a timeless piece that never fails to garner compliments. I'm proud to be a Reddy watch owner."</p>
-                <span class="text-success fw-semibold text-uppercase">Emily B - Feb 22, 2023</span>
+                <span class="text-black fw-semibold text-uppercase">Emily B - Feb 22, 2023</span>
                 <span class="text-warning"><i class="fa-solid fa-star"></i></span>
                 <span class="text-warning"><i class="fa-solid fa-star"></i></span>
                 <span class="text-warning"><i class="fa-solid fa-star"></i></span>
@@ -218,24 +222,26 @@
         <div class="row">
           <div class="col-12">
             <div class="features-heading">
-              <h2 class="text-center wow bounceOut text-success fw-light fs-1 text-capitalize">Features  of watch</h2>
+              <div class="common-heading">
+                <h2 class="text-center text-black fw-light text-capitalize">Features  of watch</h2>
+              </div>
             </div>
           </div>
           <div class="col-12">
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 py-5 wow feature-content flipInY">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 py-5 feature-content">
                <div class="col">
-                 <div class="card p-0 border-0  position-relative h-100">
+                 <div class="card p-0 border-0 position-relative h-100">
                   <div class="overly position-absolute d-flex justify-content-center align-items-center">
                     <a href="#" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-light text-capitalize text-decoration-underline fs-6">View more</a>
                   </div>
                     <img class="img-fluid w-100 card-img-top" src="image/features-1.png" alt="">
-                   <div class="card-body p-0">
+                   <div class="card-body p-0 text-center">
                     <div class="card-title pt-1 m-0">
-                      <h3 class="fs-4 fw-bold text-success  text-capitalize">
+                      <h3 class="fs-4 fw-bold text-black text-capitalize">
                         Superior Craftsmanship
                         </h3>
                     </div>
-                     <div class="card-text py-2 m-0">
+                     <div class="card-text pt-2 pb-3 m-0">
                       <p class="text-light-emphasis w-light text-capitalize fs-6">Each Reddy watch is meticulously crafted with precision and attention to detail, reflecting the artistry of expert watchmakers.</p>
                      </div>
                   </div>
@@ -247,9 +253,9 @@
                     <a href="#" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-light text-capitalize text-decoration-underline fs-6">View more</a>
                   </div>
                     <img class="img-fluid w-100 card-img-top" src="image/features-2.png" alt="">
-                   <div class="card-body p-0">
+                   <div class="card-body p-0 text-center">
                     <div class="card-title pt-1 m-0">
-                      <h3 class="fs-4 fw-bold text-success  text-capitalize">
+                      <h3 class="fs-4 fw-bold text-black text-capitalize">
                         Superior Craftsmanship
                         </h3>
                     </div>
@@ -260,14 +266,14 @@
                  </div>
                </div>
                <div class="col">
-                 <div class="card p-0 border-0  position-relative h-100">
+                 <div class="card p-0 border-0 position-relative h-100">
                   <div class="overly position-absolute d-flex justify-content-center align-items-center">
                     <a href="#" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-light text-capitalize text-decoration-underline fs-6">View more</a>
                   </div>
                     <img class="img-fluid w-100 card-img-top" src="image/features-3.png" alt="">
-                   <div class="card-body p-0">
+                   <div class="card-body text-center p-0">
                     <div class="card-title pt-1 m-0">
-                      <h3 class="fs-4 fw-bold text-success  text-capitalize">
+                      <h3 class="fs-4 fw-bold text-black text-capitalize">
                         Superior Craftsmanship
                         </h3>
                     </div>
@@ -283,13 +289,13 @@
                     <a href="#" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-light text-capitalize text-decoration-underline fs-6">View more</a>
                   </div>
                     <img class="img-fluid w-100 card-img-top" src="image/features-4.png" alt="">
-                   <div class="card-body p-0">
+                   <div class="card-body text-center p-0">
                     <div class="card-title pt-1 m-0">
-                      <h3 class="fs-4 fw-bold text-success  text-capitalize">
+                      <h3 class="fs-4 fw-bold text-black text-capitalize">
                         Superior Craftsmanship
                         </h3>
                     </div>
-                     <div class="card-text py-2 m-0">
+                     <div class="card-text pt-2 pb-3 m-0">
                       <p class="text-light-emphasis w-light text-capitalize fs-6">Each Reddy watch is meticulously crafted with precision and attention to detail, reflecting the artistry of expert watchmakers.</p>
                      </div>
                   </div>
@@ -301,9 +307,9 @@
                     <a href="#" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-light text-capitalize text-decoration-underline fs-6">View more</a>
                   </div>
                     <img class="img-fluid w-100 card-img-top" src="image/features-5.png" alt="">
-                   <div class="card-body p-0">
+                   <div class="card-body text-center p-0">
                     <div class="card-title pt-1 m-0">
-                      <h3 class="fs-4 fw-bold text-success  text-capitalize">
+                      <h3 class="fs-4 fw-bold text-black text-capitalize">
                         Superior Craftsmanship
                         </h3>
                     </div>
@@ -314,14 +320,14 @@
                  </div>
                </div>
                <div class="col">
-                 <div class="card p-0 border-0  position-relative h-100">
+                 <div class="card p-0 border-0 position-relative h-100">
                   <div class="overly position-absolute d-flex justify-content-center align-items-center">
                     <a href="#" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-light text-capitalize text-decoration-underline fs-6">View more</a>
                   </div>
                     <img class="img-fluid w-100 card-img-top" src="image/features-6.png" alt="">
-                   <div class="card-body p-0">
+                   <div class="card-body text-center p-0">
                     <div class="card-title pt-1 m-0">
-                      <h3 class="fs-4 fw-bold text-success  text-capitalize">
+                      <h3 class="fs-4 fw-bold text-black text-capitalize">
                         Superior Craftsmanship
                         </h3>
                     </div>
@@ -344,15 +350,17 @@
         <div class="row">
           <div class="col-12">
             <div class="faq-heading">
-              <h2 class="text-center wow bounceOut text-black fw-light fs-1 text-capitalize">FAQs Section</h2>
+              <div class="common-heading">
+                <h2 class="text-center text-black fw-light text-capitalize">FAQs Section</h2>
+              </div>
             </div>
           </div>
-          <div class="col-12 py-5 wow fadeInRightBig">
-            <div class="faq-content w-75 m-auto">
+          <div class="col-12 d-flex justify-content-center py-5">
+            <div class="faq-content">
               <div class="accordion" id="accordionPanelsStayOpenExample">
                 <div class="accordion-item border-0 our-accordion">
-                  <h2 class="accordion-header text-dark-50 fw-light text-uppercase">
-                    <button class="accordion-button acrdn-btn  border-0" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  <h2 class="accordion-header m-auto">
+                    <button class="accordion-button rounded-0 fs-2 text-white acrdn-btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
                       Are your watches water-resistant?
                     </button>
                   </h2>
@@ -362,9 +370,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="accordion-item  border-0  our-accordion">
+                <div class="accordion-item border-0 our-accordion">
                   <h2 class="accordion-header">
-                    <button class="accordion-button acrdn-btn border-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    <button class="accordion-button rounded-0 acrdn-btn fs-2 text-white border-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
                       How long is the warranty period?
                     </button>
                   </h2>
@@ -374,9 +382,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="accordion-item our-accordion">
+                <div class="accordion-item border-0 our-accordion">
                   <h2 class="accordion-header">
-                    <button class="accordion-button acrdn-btn border-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    <button class="accordion-button rounded-0 acrdn-btn fs-2 text-white border-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
                       Can I replace the watch strap?
                     </button>
                   </h2>
@@ -397,20 +405,22 @@
     <section id="order">
       <div class="container">
         <div class="row py-5 align-items-center">
-          <div class="col-12 col-md-6 wow rotateInUpLeft">
+          <div class="col-12 col-md-6">
             <div class="order-img">
               <img  class="img-fluid w-100" src="image/order-1.png" alt="">
             </div>
           </div>
-          <div class="col-12 col-md-6 ps-5 pt-4 pt-md-0 wow rotateInDownRight">
+          <div class="col-12 col-md-6 ps-5 pt-4 pt-md-0">
             <div class="order-text">
-              <h3 class="text-white text-capitalize fw-light fs-1">Order Your choice</h3>
-              <p class="text-white-50 fw-light text-capitalize py-2 mb-0">Experience the elegance of Reddy on your wrist. Place your order today and enjoy free worldwide shipping.</p>
-              <span class="text-white-50 fw-bold">Watch Moder :</span><span class="text-white-50 fw-bold"> Reddy Watch</span>
-              <span class="d-block text-white-50 fw-light">Price:$20,0000</span>
-              <div class="btn bg-success p-0 mt-3">
-                <a class="text-uppercase px-3 py-2 fs-5 fw-medium text-white" href="#">order now</a>
+              <div class="common-heading">
+                <h2 class="text-white fw-light">Order Your choice</h2>
+                <p class="text-white fw-light text-capitalize py-2 mb-0">Experience the elegance of Reddy on your wrist. Place your order today and enjoy free worldwide shipping.</p>
+              </div>
             </div>
+              <span class="text-white fw-bold">Watch Moder :</span><span class="text-black fw-bold"> Reddy Watch</span>
+              <span class="d-block text-white fw-semibold py-2">Price:$20,0000</span>
+              <div class="common-btn d-flex justify-content-center align-items-center  bg-success p-0 mt-2 rounded-3">
+                <a class="text-uppercase fs-6 fw-medium text-white" href="#">order now</a>
             </div>
           </div>
         </div>
@@ -420,9 +430,9 @@
     <!-- contact part start -->
     <section id="contact">
       <div class="container">
-        <div class="row py-5">
-          <div class="col-sm-6 col-12 wow fadeInLeftBig form-part1">
-            <h3 class="pb-5 fw-medium text-center text-sm-start text-dark text-capitalize fs-1">Get in touch</h3>
+        <div class="row  py-5">
+          <div class="col-sm-6 col-12 form-part1">
+            <h3 class="pb-5 fw-medium text-center text-sm-start text-black text-capitalize fs-1">Get in touch</h3>
             <form class="row w-100 g-3 needs-validation" novalidate>
               <div class="col-md-12 col-12 text-center text-sm-start ">
                 <label for="validationCustom01" class="form-label text-black fw-semibold">First name</label>
@@ -431,7 +441,7 @@
                   Looks good!
                 </div>
               </div>
-              <div class="col-md-12 wow  text-center text-sm-start col-12">
+              <div class="col-md-12 text-center text-sm-start col-12">
                 <label for="validationCustom02" class="form-label fw-semibold text-black fw-light ">Email</label>
                 <input type="email" class="form-control text-center text-sm-start custome-form border-0"  placeholder="Write your Email here" id="validationCustom02" required>
                 <div class="valid-feedback">
@@ -446,7 +456,7 @@
                 </div>
               </div>
               <div class="col-12">
-                <div class="form-check  d-flex  justify-content-center justify-content-sm-start gap-3">
+                <div class="form-check d-flex justify-content-center justify-content-sm-start gap-3">
                   <input class="form-check-input"  type="checkbox" value="" id="invalidCheck" required>
                   <label class="form-check-label fs-6 text-body-tertiary"  for="invalidCheck">
                     Agree to terms and conditions
@@ -457,14 +467,16 @@
                 </div>
               </div>
               <div class="col-12 text-center text-sm-start col-12">
-                <button class="btn f-botton text-black fw-light rounded-0" type="submit">Submit form</button>
+                <div class="common-btn bg-success d-flex justify-content-center align-items-center rounded-3">
+                  <a class="text-white text-capitalize fw-medium fs-6" href="#">Submit form</a>
+              </div>
               </div>
             </form>
           </div>
-          <div class="col-sm-6 col-12 wow fadeInRightBig">
+          <div class="col-sm-6 col-12">
             <div class="form-part2">
              <div class="stay-connnected">
-              <h3 class="fw-medium text-center text-sm-start pt-4 pt-sm-0 text-dark fs-1 text-capitalize ">Stay Connected</h3>
+              <h3 class="fw-medium text-center text-sm-start pt-4 pt-sm-0 text-black fs-1 text-capitalize ">Stay Connected</h3>
               <ul class="pt-3 text-center text-sm-start">
                 <li>
                  <i class="fa-regular fa-envelope"></i>
@@ -472,7 +484,7 @@
                 </li>
               </ul>
               <div class="social-info pt-4">
-                <h3 class="fs-1 text-capitalize text-center text-sm-start fw-medium text-dark">Social info</h3>
+                <h3 class="fs-1 text-capitalize text-center text-sm-start fw-medium text-black">Social info</h3>
                 <ul class="d-flex justify-content-sm-between justify-content-around  m-auto  m-sm-0 pt-4">
                   <li><a class="text-body-tertiary fs-5" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
                   <li><a class="text-body-tertiary fs-5" href="#"><i class="fa-brands fa-instagram"></i></a></li>
@@ -496,8 +508,6 @@
     <script src="js/jquery-1.12.4.min.js"></script>
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <!-- wow js  -->
-    <script src="js/wow.min.js"></script>
     <!-- slick js  -->
     <script src="js/slick.min.js"></script>
     <!-- fontawesome link -->

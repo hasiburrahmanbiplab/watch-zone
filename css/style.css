@@ -1,8 +1,6 @@
 :root{
-    --primary:#3D3A38;
     --main-family:'Lora', serif;
     --header-family:'Mirza', serif;
-    --plus:<i class="fa-solid fa-plus"></i>;
 }
 body{
     background: #ffffff;
@@ -82,20 +80,19 @@ img{
     box-shadow: none;
 }
 .main-navbar .nav-link{
-    color: black ;
     font-family: var(--main-family);
+    border-bottom: 1px solid transparent;
 }
 .main-navbar .nav-link:hover{
-    color: #198754;
-    font-family: var(--main-family);
-}
-.main-navbar .nav-item .active{
-    color: #198754;
-}
+    border-bottom: 1px solid #ffffff;
+} 
 .main-navbar .navbar-brand{
     font-family: var(--header-family);
 }
-
+.common-heading h2{
+    font-size: 55px;
+    font-family: var(--header-family);
+}
 /* navbar part End */
 /* banner part start */
 #banner{
@@ -103,12 +100,10 @@ img{
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    height: 800px;
+    height: 750px;
 }
 .banner-text h1{
-    font-size: 65px;
+    font-size: 75px;
     font-family: var(--header-family);
     letter-spacing: -1%;
 }
@@ -116,13 +111,16 @@ img{
     font-family: var(--main-family);
     width: 80%;
 }
-.banner-text .btn a{
-    font-family: var(--header-family);
+.common-btn{
+    width: 130px;
+    height: 40px;
+}
+ .common-btn a{
+    font-family: var(--main-family);
     border-radius: 10px;
     transition: ease-in-out 0.3s;
 }
-.banner-text .btn a:hover{
-   transform: translateX(10px);
+.common-btn:hover{
    transition: ease-in-out 0.3s;
 }
 /* banner part End */
@@ -145,7 +143,10 @@ img{
 /* projuct part End */
 /* video part start */
 #video{
-    background: var(--primary);
+    background: black;
+}
+.video-header{
+    max-width: 600px;
 }
 .video-header h2{
     font-family: var(--header-family);
@@ -208,7 +209,7 @@ img{
 .feature-content .card .overly{
     width: 0;
     height: 0;
-    background: rgba(77, 78, 78, 0.849);
+    background: rgba(20, 20, 20, 0.856);
     bottom: 0;
     right: 0;
     opacity: 0;
@@ -220,7 +221,7 @@ img{
     font-family: var(--main-family);
 }
 .feature-content .card:hover .overly{
-    width: 60%;
+    width: 100%;
     height: 100%;
     opacity: 1;
     visibility: visible;
@@ -241,41 +242,47 @@ img{
 .faq-heading h2{
     font-family: var(--header-family);
 }
+.faq-content{
+    max-width: 620px;
+}
+.faq-content .our-accordion{
+    padding: 10px 0;
+}
 .acrdn-btn:not(.collapsed) {
-	background-color: transparent !important;
+    background: rgb(0, 0, 0);
     box-shadow: none !important;
-    color: var(--primary) !important;
+}
+.acrdn-btn{
+    background: rgb(0, 0, 0);
 }
 .acrdn-btn:focus{
     box-shadow: none !important;
 }
 .our-accordion .acrdn-btn{
-    font-size: 25px;
+    display: flex;
+    align-items: center;
     font-family: var(--header-family);
-    color: var(--primary);
-    font-weight: 600;
 }
 .our-accordion .acrdn-body{
-  font-size: 16px;
-  color: var(--c);
-  font-weight: 600;
   font-family: var(--main-family);
+  padding-bottom: 0;
 }
 .acrdn-btn::after {
   background:url(../image/plus.png);
   background-repeat: no-repeat;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 .acrdn-btn:not(.collapsed)::after {
     background:url(../image/mainas.png);
     background-repeat: no-repeat;
+    margin-bottom: 10px;
 }
 /* faq part End */
 /* order part start */
 #order{
-    background: var(--primary);
-}
-.order-text h3{
-    font-family: var(--header-family);
+    background: black;
 }
 .order-text p{
     width: 425px;
@@ -283,10 +290,6 @@ img{
 }
 .order-text span{
     font-family: var(--main-family);
-}
-.order-text .btn a{
-    border-radius: 10px;
-   font-family: var(--header-family);
 }
 .color-choose .red{
     width: 12px;
@@ -308,13 +311,6 @@ img{
 .custome-form:focus{
     box-shadow: none;
 }
-.f-botton {
-    background: var(--c);
-    font-family: var(--main-family);
-}
-.f-botton:hover{
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.829);
-}
 .form-part1 h3{
     font-family: var(--header-family);
 }
@@ -331,17 +327,17 @@ img{
     align-items: center;
 }
 .social-info ul li:hover{
-    background:#198754;
+    background:black;
 }
 .social-info ul li:hover a{
-    background:#198754;
+    background:black;
     color: #ffffff !important;
 }
 .social-info ul{
    width: 50%;
 }
 #contact .copy-right{
-    background-color: rgba(77, 78, 77, 0.692);
+    background-color: black;
 }
 
 /* contact part End */
@@ -349,6 +345,12 @@ img{
 @media (min-width:1200px) and (max-width:1399.99px) {
     #banner{
         height: 650px; 
+    }
+    .banner-text h1 {
+        font-size: 65px;
+    }
+    .common-heading h2 {
+        font-size: 50px;
     }
 }
 @media (min-width:992px) and (max-width:1199.99px) {
@@ -369,9 +371,6 @@ img{
     
     .banner-text h1 {
         font-size: 50px;
-    }
-    .banner-text p {
-        width: 90%;
     }
     .social-info ul {
         width: 80%;
@@ -405,9 +404,6 @@ img{
     }
     .banner-text h1 {
         font-size: 35px;
-    }
-    .video-header p {
-        width:75% !important;
     }
     .customer-review .inner-part {
         margin: 0 15px;
