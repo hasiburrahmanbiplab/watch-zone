@@ -4,7 +4,7 @@
 }
 body{
     background: #ffffff;
-    overflow-x: hidden;
+    overflow-x: scroll;
 }
 /* common heading part start */
 *{
